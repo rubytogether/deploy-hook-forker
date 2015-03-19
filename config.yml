@@ -1,6 +1,6 @@
-your-heroku-app-name:
-  slack: https://other.slack.com/services/hooks/heroku?token=INTENTIONALLY_LEFT_BLANK
-  appsignal: https://push.appsignal.com/1/markers/heroku?api_key=INTENTIONALLY_LEFT_BLANK
-  honeybadger: https://api.honeybadger.io/v1/deploys?deploy[environment]=production&api_key=INTENTIONALLY_LEFT_BLANK
-another-heroku-app-name:
-  honeybadger: https://api.honeybadger.io/v1/deploys?deploy[environment]=staging&api_key=INTENTIONALLY_LEFT_BLANK
+rubytogether:
+  slack: https://rubytogether.slack.com/services/hooks/heroku?token=<%= ENV.fetch("SLACK_API_TOKEN") %>
+  rollbar: https://api.rollbar.com/api/1/deploy/?access_token=<%= ENV.fetch("ROLLBAR_API_TOKEN") %>&environment=production
+rubytogether-staging:
+  slack: https://rubytogether.slack.com/services/hooks/heroku?token=<%= ENV.fetch("SLACK_API_TOKEN") %>
+  rollbar: https://api.rollbar.com/api/1/deploy/?access_token=<%= ENV.fetch("ROLLBAR_API_TOKEN_STAGING") %>&environment=production
