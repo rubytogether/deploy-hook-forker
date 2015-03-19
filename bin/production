@@ -1,0 +1,2 @@
+#!/bin/sh
+HEROKU_APP=rubytogether-deployhooks HKAPP=rubytogether-deployhooks exec "${HEROKU_COMMAND:-heroku}" "$@"
