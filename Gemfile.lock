@@ -5,7 +5,7 @@ GEM
     httparty (0.12.0)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    json (1.8.1)
+    json (1.8.3)
     method_source (0.8.2)
     multi_xml (0.5.5)
     pry (0.9.12.4)
@@ -15,8 +15,6 @@ GEM
     rack (1.5.2)
     rack-protection (1.5.1)
       rack
-    shotgun (0.9)
-      rack (>= 1.0)
     sinatra (1.4.4)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -30,5 +28,10 @@ PLATFORMS
 DEPENDENCIES
   httparty
   pry
-  shotgun
   sinatra
+
+RUBY VERSION
+   ruby 2.3.0p0
+
+BUNDLED WITH
+   1.12.0.pre
